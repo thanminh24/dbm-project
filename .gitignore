@@ -1,0 +1,14 @@
+# Dataset files
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.jsonl
+*.xls
+*.xlsx
+
+# Common data folders
+/data/
+/datasets/
+/raw/
+/downloads/
