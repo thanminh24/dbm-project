@@ -40,3 +40,67 @@
 - Rewrote notebook markdown into natural language text without special formatting.
 - Expanded README with dataset notes and a plain language notebook flow summary.
 - Re-executed the notebook after markdown updates.
+
+## 2026-01-31T08:49:52
+- Added preview helper and head(5) outputs for key dataset assembly steps to improve transparency.
+- Re-executed the notebook after adding previews.
+
+## 2026-01-31T09:05:57
+- Rewrote notebook markdown using bold text without special characters.
+- Re-executed the notebook after markdown changes.
+
+## 2026-01-31T09:08:26
+- Beautified notebook markdown with structured headings and bullets.
+- Updated README with clearer sections and dataset notes.
+- Re-executed the notebook after markdown updates.
+
+## 2026-01-31T09:36:22
+- Rewrote notebook markdown with headings and bullet points per request.
+- Added VLE activity type features, entropy features, and tuned models including HistGradientBoosting.
+- Added threshold tuning and rubric summary cell; re-executed notebook after fixes.
+
+## 2026-01-31T11:07:23
+- Created `Prj_DBM_Final.ipynb` with rewritten markdown that emphasizes detailed EDA.
+- Created `Prj_DBM_data.ipynb` focused on data loading, cleaning, feature engineering, and EDA only.
+- Re-executed both new notebooks to refresh outputs.
+
+## 2026-01-31T11:17:57
+- Revised `Prj_DBM_data.ipynb` markdown and clarified section text.
+- Added color styling and extra plot types (scatter, heatmap) in EDA.
+- Re-executed the data notebook.
+
+## 2026-01-31T11:25:05
+- Rebuilt `Prj_DBM_data.ipynb` with markdown placed directly before each code block and included all cleaning steps.
+- Added zero-activity investigation with optional row removal for sensitivity analysis.
+- Re-executed both data and final notebooks after updates.
+
+## 2026-01-31T14:31:12
+- Enforced zero-activity row removal in both data and final notebooks.
+- Dropped leakage features immediately after dataset assembly so they do not appear in EDA or modeling.
+- Re-executed both notebooks after updates.
+
+## 2026-01-31T14:36:36
+- Reduced model comparison to four models (two simple, two complex) in `Prj_DBM_Final.ipynb`.
+- Added HistGradientBoosting import and re-executed final notebook.
+
+## 2026-01-31T15:13:38
+- Replaced fillna(0) for engineered feature list with dropping columns that contain missing values in Prj_DBM_Final.ipynb, Prj_DBM_data.ipynb, and Prj_DBM_AutoML.ipynb.
+
+## 2026-01-31T15:18:32
+- Changed NA handling to drop rows (not columns) for the engineered feature list in Prj_DBM_Final.ipynb, Prj_DBM_data.ipynb, and Prj_DBM_AutoML.ipynb.
+- Re-executed Prj_DBM_data.ipynb and Prj_DBM_Final.ipynb after the change.
+
+## 2026-01-31T15:46:30
+- Set H2O init to verbose with log_dir and log_level in Prj_DBM_AutoML.ipynb.
+
+## 2026-01-31T16:57:26
+- Handoff summary:
+  - Key notebooks: `Prj_DBM_Final.ipynb` (full pipeline), `Prj_DBM_data.ipynb` (data prep + EDA), `Prj_DBM_AutoML.ipynb` (H2O AutoML search).
+  - Data policy: CSVs unchanged; zero-activity rows are dropped; leakage features are dropped immediately after dataset assembly in data/final notebooks.
+  - NA handling: rows with NA in engineered feature list are dropped (not columns).
+  - Model comparison in `Prj_DBM_Final.ipynb`: 4 models only (LogReg, Decision Tree, Random Forest, HistGradientBoosting).
+  - H2O AutoML: uses H2O; baseline models then AutoML. H2O init is verbose with log_dir; AutoML runtime may be heavy in WSL.
+  - H2O issue: WSL loopback alias causes H2O cloud size 2 and connection refused. Fixes recommended: run H2O on Windows with Java 17 and connect from WSL, or downgrade WSL; WSL-only fixes may still loop.
+  - Dependencies: `pip install numpy pandas matplotlib scikit-learn h2o` (Java 17 required for H2O).
+  - H2O connection command example: `h2o.init(ip='127.0.0.1', port=54321, bind_to_localhost=True, strict_version_check=False, jvm_custom_args=['-Djava.net.preferIPv4Stack=true'])`.
+  - AutoML notebook has not been successfully executed inside WSL due to H2O cloud issue; intended to run on Windows or Docker.
