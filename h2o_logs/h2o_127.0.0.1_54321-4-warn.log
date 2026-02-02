@@ -18,3 +18,995 @@ Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are un
 	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:491) ~[h2o.jar:?]
 	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:568) ~[h2o.jar:?]
 	... 9 more
+02-02 09:50:23.154 127.0.0.1:54321       30684  8348097-48  WARN water.default: Validation: User specified a validation frame with cross-validation still enabled. Please note that the models will still be validated using cross-validation only, the validation frame will be used to provide purely informative validation metrics on the trained models.
+02-02 09:50:23.206 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:50:23.210 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:50:23.210 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:50:23.542 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.613 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.614 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.615 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.615 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.615 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:23.628 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:25.422 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:25.904 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:26.219 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:26.563 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 09:50:27.693 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: Reached maximum number of iterations 53!
+02-02 09:50:27.851 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:27.857 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:27.858 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:27.916 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:27.916 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:28.056 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:28.158 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:33.184 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:33.184 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:33.333 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:33.333 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:35.867 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:35.870 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:37.636 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _ntrees: Setting optimal _ntrees to 75 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:50:37.636 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:50:37.944 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:37.950 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:37.955 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:50:37.955 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:50:39.870 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:39.872 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:39.874 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:48.846 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _ntrees: Setting optimal _ntrees to 50 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:50:48.846 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:50:49.092 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:50:49.092 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:50:51.205 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:51.206 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:51.206 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:51.230 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:51.230 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:51.403 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:51.419 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:52.913 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:52.913 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:52.919 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:52.922 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:54.503 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:54.506 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:55.853 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _ntrees: Setting optimal _ntrees to 86 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:50:55.853 127.0.0.1:54321       30684     FJ-2-51  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:50:56.110 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:56.115 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:56.117 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:50:56.117 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:50:57.262 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:57.263 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:57.263 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:50:57.271 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:57.271 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:57.275 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:57.277 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:58.800 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:58.800 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:58.804 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:50:58.809 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:00.502 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:00.505 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:01.877 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 74 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:01.877 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:02.120 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:02.124 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:02.126 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:02.126 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:03.151 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:03.152 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:03.152 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:03.159 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:03.159 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:03.165 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:03.165 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:04.774 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:04.774 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:04.779 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:04.779 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:06.477 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:06.479 127.0.0.1:54321       30684    FJ-3-105  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:07.937 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 57 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:07.937 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:08.163 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:08.167 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:08.169 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:08.169 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:09.431 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.432 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.432 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.801 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: Model training job DRF XRT (Extremely Randomized Trees) completed with exception: java.lang.AssertionError
+02-02 09:51:09.801 127.0.0.1:54321       30684     FJ-2-25 ERROR water.default: 
+java.lang.AssertionError: null
+	at hex.tree.DHistogram.init(DHistogram.java:350) ~[h2o.jar:?]
+	at hex.tree.DHistogram.init(DHistogram.java:343) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.computeChunk(ScoreBuildHistogram2.java:427) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.map(ScoreBuildHistogram2.java:408) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:89) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1704) ~[h2o.jar:?]
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468) ~[h2o.jar:?]
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263) [h2o.jar:?]
+	at jsr166y.ForkJoinPool$WorkQueue.popAndExecAll(ForkJoinPool.java:906) ~[h2o.jar:?]
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:979) [h2o.jar:?]
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1479) [h2o.jar:?]
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [h2o.jar:?]
+02-02 09:51:09.811 127.0.0.1:54321       30684     FJ-1-15 ERROR water.default: ModelTraining: XRT_1_AutoML_1_20260202_95023 [DRF XRT (Extremely Randomized Trees)] failed: java.lang.AssertionError
+02-02 09:51:09.811 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.812 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.812 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:09.819 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:09.819 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:09.823 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:09.826 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:11.479 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:11.479 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:11.484 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:11.487 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:12.949 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:12.953 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:14.045 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 93 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:14.045 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:14.291 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:14.295 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:14.297 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:14.298 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:15.423 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:51:15.424 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:51:15.424 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:51:15.647 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:51:16.950 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:51:17.475 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:51:17.993 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:51:18.456 127.0.0.1:54321       30684    FJ-3-101  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 09:51:18.896 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _epochs: Setting optimal _epochs to 10.40511612347471 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:18.896 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:18.999 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:19.000 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:19.615 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:19.635 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:19.642 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:19.643 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:19.647 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:19.652 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:21.974 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:21.974 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:21.980 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:21.981 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:24.541 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:24.546 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:25.802 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _ntrees: Setting optimal _ntrees to 92 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:25.802 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:26.040 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:26.043 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:26.045 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:26.045 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:27.093 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:27.098 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:27.099 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:27.103 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:27.106 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:29.237 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:29.237 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:29.241 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:29.247 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:31.199 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:31.203 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:32.823 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _ntrees: Setting optimal _ntrees to 51 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:32.823 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:33.036 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:33.040 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:33.042 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:33.043 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:34.275 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:34.280 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:34.280 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:34.285 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:34.285 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:38.113 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:38.113 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:38.129 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:38.131 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:41.605 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:41.607 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:44.571 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _ntrees: Setting optimal _ntrees to 55 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:44.571 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:44.872 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:44.878 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:44.880 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:44.880 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:47.763 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:47.769 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:47.769 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:47.775 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:47.775 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:49.880 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:49.880 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:49.886 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:49.887 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:52.020 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:52.023 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:54.025 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _ntrees: Setting optimal _ntrees to 51 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:51:54.025 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:51:54.294 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:54.299 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:54.301 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:51:54.301 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:51:56.111 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 09:51:56.117 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:56.117 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:56.123 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:56.124 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:57.565 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:57.565 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:57.570 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:57.572 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:59.003 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:51:59.007 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:52:00.102 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _ntrees: Setting optimal _ntrees to 62 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:52:00.102 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:52:00.336 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:52:00.341 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 09:52:00.342 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:52:00.343 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:52:01.405 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:52:01.408 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:52:01.435 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:52:32.246 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:53:17.842 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:53:48.298 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:54:28.869 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 09:54:59.271 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _epochs: Setting optimal _epochs to 1553.2457343459855 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:54:59.271 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:54:59.369 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:54:59.370 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:55:47.280 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:55:47.304 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:56:18.077 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:56:54.039 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:57:25.072 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:57:56.229 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 09:58:27.418 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _epochs: Setting optimal _epochs to 641.2177127852503 for cross-validation main model based on early stopping of cross-validation models.
+02-02 09:58:27.419 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 09:58:27.584 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 09:58:27.584 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 09:59:04.647 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 09:59:04.667 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 09:59:41.641 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:00:29.091 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:01:06.307 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:01:43.215 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:02:37.231 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _epochs: Setting optimal _epochs to 432.58906184688806 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:02:37.231 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:02:37.673 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:02:37.673 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:04:58.102 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:04:58.108 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:04:58.182 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:05:34.882 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:06:12.057 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:06:49.240 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:07:26.162 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:08:13.171 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _epochs: Setting optimal _epochs to 424.9628798626324 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:08:13.172 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:08:13.440 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:08:13.440 127.0.0.1:54321       30684     FJ-3-39  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:08:59.371 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:08:59.428 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:10:04.019 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:11:20.306 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:12:23.072 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:13:25.641 127.0.0.1:54321       30684     FJ-3-53  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:14:15.017 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _epochs: Setting optimal _epochs to 142.6736793322209 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:14:15.017 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:14:15.427 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:14:15.427 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:14:39.877 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:14:39.880 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:14:39.903 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:15:20.914 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:15:51.755 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:16:22.535 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:16:53.546 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:17:29.498 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _epochs: Setting optimal _epochs to 910.4970994565759 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:17:29.498 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:17:29.613 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:17:29.613 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:18:10.315 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:18:10.336 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:18:50.308 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:19:35.698 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:20:21.597 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:21:01.378 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:21:46.550 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _epochs: Setting optimal _epochs to 174.1226718876783 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:21:46.550 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:21:46.918 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:21:46.918 127.0.0.1:54321       30684     FJ-3-91  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:22:38.775 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 10:22:38.776 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 10:22:38.778 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping unused columns: [registered_early_flag]
+02-02 10:22:39.031 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.037 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.037 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.037 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.037 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.037 127.0.0.1:54321       30684     FJ-3-47  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.038 127.0.0.1:54321       30684     FJ-4-35  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.038 127.0.0.1:54321       30684      FJ-4-5  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.038 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.038 127.0.0.1:54321       30684      FJ-4-9  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:39.038 127.0.0.1:54321       30684     FJ-4-37  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:40.188 127.0.0.1:54321       30684      FJ-4-5  WARN water.default: Reached maximum number of iterations 146!
+02-02 10:22:40.499 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 10:22:40.499 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 10:22:40.499 127.0.0.1:54321       30684     FJ-1-15  WARN water.default: ModelTraining: _train param, Dropping unused columns: [registered_early_flag]
+02-02 10:22:41.552 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.555 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.555 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.555 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.555 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.555 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:41.556 127.0.0.1:54321       30684     FJ-4-49  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:42.178 127.0.0.1:54321       30684     FJ-4-49  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:42.836 127.0.0.1:54321       30684     FJ-4-49  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:43.604 127.0.0.1:54321       30684     FJ-4-49  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:44.378 127.0.0.1:54321       30684     FJ-4-49  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:22:45.692 127.0.0.1:54321       30684    FJ-4-121  WARN water.default: Reached maximum number of iterations 143!
+02-02 10:22:46.041 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_1': substituting in a column of NaN
+02-02 10:22:46.041 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_4': substituting in a column of NaN
+02-02 10:22:46.041 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_2': substituting in a column of NaN
+02-02 10:22:46.041 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'DRF_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:22:46.042 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_2_AutoML_1_20260202_95023_model_2': substituting in a column of NaN
+02-02 10:22:46.042 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_3': substituting in a column of NaN
+02-02 10:22:46.042 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:22:46.042 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_1_AutoML_1_20260202_95023_model_3': substituting in a column of NaN
+02-02 10:22:46.042 127.0.0.1:54321       30684     FJ-2-21  WARN water.default: Test/Validation dataset is missing column 'GLM_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_1': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_4': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_2': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'DRF_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_2_AutoML_1_20260202_95023_model_2': substituting in a column of NaN
+02-02 10:22:47.556 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_1_20260202_95023_model_3': substituting in a column of NaN
+02-02 10:22:47.557 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:22:47.557 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_1_AutoML_1_20260202_95023_model_3': substituting in a column of NaN
+02-02 10:22:47.557 127.0.0.1:54321       30684  48097-1672  WARN water.default: Test/Validation dataset is missing column 'GLM_1_AutoML_1_20260202_95023': substituting in a column of NaN
+02-02 10:27:46.966 127.0.0.1:54321       30684  48097-1458  WARN water.default: Validation: User specified a validation frame with cross-validation still enabled. Please note that the models will still be validated using cross-validation only, the validation frame will be used to provide purely informative validation metrics on the trained models.
+02-02 10:27:46.970 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:27:46.970 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:27:46.970 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:27:47.014 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.036 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.037 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.037 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.037 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.037 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.037 127.0.0.1:54321       30684    FJ-3-115  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.283 127.0.0.1:54321       30684    FJ-3-115  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.495 127.0.0.1:54321       30684    FJ-3-115  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.732 127.0.0.1:54321       30684    FJ-3-115  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:47.965 127.0.0.1:54321       30684    FJ-3-115  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:27:48.534 127.0.0.1:54321       30684     FJ-3-99  WARN water.default: Reached maximum number of iterations 48!
+02-02 10:27:48.579 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:27:48.580 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:27:48.580 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:27:48.586 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:48.586 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:48.592 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:48.592 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:50.949 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:50.949 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:50.954 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:50.954 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:53.138 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:53.142 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:54.743 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _ntrees: Setting optimal _ntrees to 87 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:27:54.743 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:27:55.153 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:55.159 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:27:55.161 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:27:55.161 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:27:56.776 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:27:56.777 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:27:56.777 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:06.131 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _ntrees: Setting optimal _ntrees to 50 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:06.131 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:06.451 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:06.451 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:08.601 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:08.601 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:08.601 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:08.607 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:08.607 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:08.613 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:08.615 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:09.908 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:09.908 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:09.913 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:09.914 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:11.292 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:11.295 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:12.336 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _ntrees: Setting optimal _ntrees to 90 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:12.336 127.0.0.1:54321       30684     FJ-2-17  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:12.656 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:12.659 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:12.662 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:12.662 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:13.712 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:13.713 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:13.713 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:13.719 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:13.719 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:13.724 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:13.725 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:15.188 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:15.188 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:15.192 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:15.194 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:16.503 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:16.505 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:17.661 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 82 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:17.661 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:17.967 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:17.970 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:17.972 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:17.972 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:19.093 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:19.093 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:19.093 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:19.099 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:19.099 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:19.104 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:19.106 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:20.680 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:20.680 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:20.683 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:20.687 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:22.213 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:22.216 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:23.576 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 67 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:23.576 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:23.880 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:23.884 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:23.886 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:23.886 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:25.119 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.119 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.119 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.177 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: Model training job DRF XRT (Extremely Randomized Trees) completed with exception: java.lang.AssertionError
+02-02 10:28:25.177 127.0.0.1:54321       30684     FJ-2-31 ERROR water.default: 
+java.lang.AssertionError: null
+	at hex.tree.DHistogram.init(DHistogram.java:350) ~[h2o.jar:?]
+	at hex.tree.DHistogram.init(DHistogram.java:343) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.computeChunk(ScoreBuildHistogram2.java:427) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.map(ScoreBuildHistogram2.java:408) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:89) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1704) ~[h2o.jar:?]
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468) ~[h2o.jar:?]
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263) [h2o.jar:?]
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:976) [h2o.jar:?]
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1479) [h2o.jar:?]
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [h2o.jar:?]
+02-02 10:28:25.178 127.0.0.1:54321       30684     FJ-1-11 ERROR water.default: ModelTraining: XRT_1_AutoML_2_20260202_102746 [DRF XRT (Extremely Randomized Trees)] failed: java.lang.AssertionError
+02-02 10:28:25.179 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.179 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.179 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:25.185 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:25.185 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:25.191 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:25.191 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:26.774 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:26.774 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:26.777 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:26.777 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:28.236 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:28.240 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:29.374 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 116 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:29.374 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:29.706 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:29.711 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:29.713 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:29.713 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:30.914 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:28:30.914 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:28:30.914 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:28:30.932 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:28:31.318 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:28:31.699 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:28:32.078 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:28:32.467 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:28:32.862 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _epochs: Setting optimal _epochs to 10.40511612347471 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:32.862 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:32.937 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:32.937 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:33.393 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:33.397 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:33.403 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:33.403 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:33.407 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:33.409 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:35.007 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:35.007 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:35.011 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:35.011 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:36.465 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:36.467 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:37.582 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 103 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:37.582 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:37.897 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:37.902 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:37.904 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:37.904 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:39.062 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:39.067 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:39.067 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:39.072 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:39.073 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:41.040 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:41.040 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:41.044 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:41.054 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:42.857 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:42.859 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:44.399 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 61 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:44.399 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:44.705 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:44.707 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:44.709 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:44.709 127.0.0.1:54321       30684     FJ-3-83  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:46.093 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:46.100 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:46.100 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:46.104 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:46.104 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:48.793 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:48.793 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:48.797 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:48.799 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:51.542 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:51.545 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:53.889 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 50 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:28:53.889 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:28:54.226 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:54.232 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:54.234 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:28:54.234 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:28:56.365 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:28:56.371 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:56.371 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:56.376 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:56.376 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:58.386 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:58.386 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:58.390 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:28:58.392 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:00.278 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:00.281 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:01.719 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 53 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:29:01.719 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:29:02.030 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:02.033 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:02.035 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:29:02.035 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:29:03.457 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:29:03.464 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:03.464 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:03.467 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:03.470 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:04.961 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:04.961 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:04.965 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:04.965 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:06.386 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:06.389 127.0.0.1:54321       30684     FJ-3-69  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:07.540 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _ntrees: Setting optimal _ntrees to 77 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:29:07.540 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:29:07.857 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:07.861 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:29:07.863 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:29:07.863 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:29:08.988 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:29:08.990 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:29:09.035 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:29:39.477 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:30:09.909 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:30:40.389 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:31:31.192 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:32:01.704 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _epochs: Setting optimal _epochs to 1511.8308644403592 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:32:01.704 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:32:01.805 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:32:01.805 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:32:44.170 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:32:44.191 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:33:15.369 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:33:46.280 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:34:17.635 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:34:48.686 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:35:19.503 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _epochs: Setting optimal _epochs to 616.6732763309619 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:35:19.503 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:35:19.655 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:35:19.655 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:35:56.270 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:35:56.290 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:36:32.733 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:37:08.958 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:38:00.743 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:38:32.476 127.0.0.1:54321       30684     FJ-3-29  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:39:03.666 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _epochs: Setting optimal _epochs to 439.48570406873307 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:39:03.666 127.0.0.1:54321       30684     FJ-2-31  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:39:03.805 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:39:03.805 127.0.0.1:54321       30684     FJ-3-43  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:39:47.393 127.0.0.1:54321       30684     FJ-1-11  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:39:47.399 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:39:47.416 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:40:17.976 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:40:48.495 127.0.0.1:54321       30684     FJ-3-13  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:41:09.909 127.0.0.1:54321       30684      FJ-2-3  WARN water.default: GridSearch job DeepLearning Grid Search completed with exception: water.Job$JobCancelledException: job DeepLearning Grid Search [$03017f00000132d4ffffffff$_9e3afb077881cbcdcf19e30ef4d4431b] was cancelled
+02-02 10:41:13.341 127.0.0.1:54321       30684  8348097-46  WARN water.default: Validation: User specified a validation frame with cross-validation still enabled. Please note that the models will still be validated using cross-validation only, the validation frame will be used to provide purely informative validation metrics on the trained models.
+02-02 10:41:13.344 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:41:13.344 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:41:13.344 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:41:13.373 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.376 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.376 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.376 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.376 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.376 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.377 127.0.0.1:54321       30684     FJ-3-27  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:13.696 127.0.0.1:54321       30684     FJ-3-27  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:14.026 127.0.0.1:54321       30684     FJ-3-27  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:14.358 127.0.0.1:54321       30684     FJ-3-27  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:14.696 127.0.0.1:54321       30684     FJ-3-27  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 10:41:15.452 127.0.0.1:54321       30684     FJ-3-85  WARN water.default: Reached maximum number of iterations 58!
+02-02 10:41:15.505 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:15.505 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:15.505 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:15.510 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:15.510 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:15.516 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:15.516 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:18.470 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:18.470 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:18.474 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:18.477 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:21.304 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:21.307 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:23.133 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 87 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:41:23.133 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:41:23.418 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:23.423 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:23.425 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:41:23.425 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:41:25.357 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:25.357 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:25.357 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:33.997 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 50 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:41:33.997 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:41:34.207 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:41:34.207 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:41:36.457 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:36.457 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:36.457 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:36.464 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:36.464 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:36.474 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:36.478 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:38.466 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:38.466 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:38.471 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:38.474 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:40.455 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:40.460 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:41.959 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 102 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:41:41.959 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:41:42.198 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:42.202 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:42.203 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:41:42.203 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:41:43.733 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:43.733 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:43.733 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:43.739 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:43.739 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:43.744 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:43.745 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:45.715 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:45.715 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:45.719 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:45.720 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:47.854 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:47.858 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:49.529 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 91 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:41:49.529 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:41:49.776 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:49.780 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:49.783 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:41:49.783 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:41:51.389 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:51.390 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:51.390 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:51.395 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:51.395 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:51.400 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:51.400 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:53.835 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:53.835 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:53.839 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:53.842 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:56.116 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:56.120 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:57.755 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 72 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:41:57.755 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:41:57.978 127.0.0.1:54321       30684     FJ-3-73  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:57.983 127.0.0.1:54321       30684     FJ-3-73  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:57.985 127.0.0.1:54321       30684     FJ-3-73  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:41:57.985 127.0.0.1:54321       30684     FJ-3-73  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:41:59.539 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.540 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.540 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.616 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: Model training job DRF XRT (Extremely Randomized Trees) completed with exception: java.lang.AssertionError
+02-02 10:41:59.616 127.0.0.1:54321       30684     FJ-2-69 ERROR water.default: 
+java.lang.AssertionError: null
+	at hex.tree.DHistogram.init(DHistogram.java:350) ~[h2o.jar:?]
+	at hex.tree.DHistogram.init(DHistogram.java:343) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.computeChunk(ScoreBuildHistogram2.java:427) ~[h2o.jar:?]
+	at hex.tree.ScoreBuildHistogram2$ComputeHistoThread.map(ScoreBuildHistogram2.java:408) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:89) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.LocalMR.compute2(LocalMR.java:81) ~[h2o.jar:?]
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1704) ~[h2o.jar:?]
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468) ~[h2o.jar:?]
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263) [h2o.jar:?]
+	at jsr166y.ForkJoinPool$WorkQueue.popAndExecAll(ForkJoinPool.java:906) ~[h2o.jar:?]
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:979) [h2o.jar:?]
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1479) [h2o.jar:?]
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) [h2o.jar:?]
+02-02 10:41:59.617 127.0.0.1:54321       30684     FJ-1-25 ERROR water.default: ModelTraining: XRT_1_AutoML_3_20260202_104113 [DRF XRT (Extremely Randomized Trees)] failed: java.lang.AssertionError
+02-02 10:41:59.618 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.618 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.619 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [registered_early_flag]
+02-02 10:41:59.624 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:59.624 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:59.629 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:41:59.632 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:01.540 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:01.540 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:01.546 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:01.548 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:03.629 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:03.634 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:05.143 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _ntrees: Setting optimal _ntrees to 116 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:05.143 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:05.397 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:05.401 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:05.403 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:05.403 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:06.931 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:42:06.931 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:42:06.931 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:42:06.959 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:42:07.494 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:42:07.984 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:42:08.448 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:42:08.892 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:42:09.337 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _epochs: Setting optimal _epochs to 10.40511612347471 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:09.337 127.0.0.1:54321       30684     FJ-2-97  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:09.408 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:09.408 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:09.957 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:09.962 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:09.965 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:09.965 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:09.969 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:09.972 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:11.895 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:11.895 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:11.900 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:11.903 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:13.958 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:13.962 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:15.380 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _ntrees: Setting optimal _ntrees to 109 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:15.380 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:15.617 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:15.622 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:15.624 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:15.624 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:16.921 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:16.926 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:16.926 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:16.933 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:16.934 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:19.440 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:19.440 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:19.447 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:19.449 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:21.817 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:21.820 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:23.684 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _ntrees: Setting optimal _ntrees to 60 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:23.684 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:23.888 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:23.893 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:23.895 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:23.895 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:25.709 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:25.714 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:25.714 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:25.718 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:25.724 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:29.299 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:29.299 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:29.304 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:29.305 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:32.505 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:32.508 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:35.376 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _ntrees: Setting optimal _ntrees to 48 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:35.376 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:35.598 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:35.603 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:35.605 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:35.605 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:38.227 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:38.232 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:38.232 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:38.240 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:38.240 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:40.762 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:40.762 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:40.766 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:40.769 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:43.232 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:43.235 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:45.375 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _ntrees: Setting optimal _ntrees to 54 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:45.375 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:45.599 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:45.603 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:45.605 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:45.605 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:47.602 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [registered_early_flag]
+02-02 10:42:47.606 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:47.606 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:47.611 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:47.614 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:49.663 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:49.663 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:49.667 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:49.674 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:51.542 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:51.546 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: auto_rebalance: Rebalancing valid dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:53.044 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _ntrees: Setting optimal _ntrees to 77 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:42:53.044 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:42:53.263 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing train dataset into 20 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:53.267 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: auto_rebalance: Rebalancing valid dataset into 7 chunks. This model won't be reproducible on the different hardware configuration.
+02-02 10:42:53.270 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:42:53.270 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:42:54.526 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:42:54.530 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:42:54.550 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:43:30.075 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:44:35.929 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:45:31.819 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:46:07.397 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:46:42.974 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _epochs: Setting optimal _epochs to 1803.2863416923851 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:46:42.974 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:46:43.068 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:46:43.068 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:47:38.254 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:47:38.281 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:48:09.565 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:48:40.817 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:49:11.670 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:49:42.729 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:50:14.034 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _epochs: Setting optimal _epochs to 553.7851386184836 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:50:14.034 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:50:14.173 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:50:14.173 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:50:50.225 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:50:50.255 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:51:21.984 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:51:53.965 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:52:26.383 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:53:01.806 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:53:36.787 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _epochs: Setting optimal _epochs to 215.52813443199435 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:53:36.787 127.0.0.1:54321       30684     FJ-2-69  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:53:37.072 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:53:37.072 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:54:49.691 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:54:49.699 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:54:49.755 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:55:42.453 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:56:14.542 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:56:50.983 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:57:21.612 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 10:57:57.464 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _epochs: Setting optimal _epochs to 822.2882724550085 for cross-validation main model based on early stopping of cross-validation models.
+02-02 10:57:57.464 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 10:57:57.568 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 10:57:57.568 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 10:58:26.224 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 10:58:26.246 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:58:58.961 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 10:59:32.099 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:00:04.917 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:00:37.907 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 11:01:10.653 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _epochs: Setting optimal _epochs to 237.01573625856705 for cross-validation main model based on early stopping of cross-validation models.
+02-02 11:01:10.653 127.0.0.1:54321       30684     FJ-2-25  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 11:01:10.862 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 11:01:10.862 127.0.0.1:54321       30684    FJ-3-117  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 11:01:51.454 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 11:01:51.459 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 11:01:51.485 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:02:22.123 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:02:52.790 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:03:43.826 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:04:24.619 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 11:04:55.375 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _epochs: Setting optimal _epochs to 983.3650388535322 for cross-validation main model based on early stopping of cross-validation models.
+02-02 11:04:55.375 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 11:04:55.491 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 11:04:55.491 127.0.0.1:54321       30684     FJ-3-75  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 11:05:39.279 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _train: Dropping bad and constant columns: [clicks_type_repeatactivity, clicks_type_sharedsubpage, registered_early_flag]
+02-02 11:05:39.307 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:06:14.014 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:06:59.543 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:07:44.328 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5215 rows with weight=0 towards an epoch.
+02-02 11:08:33.357 127.0.0.1:54321       30684     FJ-3-87  WARN water.default: Not counting 5214 rows with weight=0 towards an epoch.
+02-02 11:09:44.797 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _epochs: Setting optimal _epochs to 134.23265058774533 for cross-validation main model based on early stopping of cross-validation models.
+02-02 11:09:44.797 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: _stopping_rounds: Disabling convergence-based early stopping for cross-validation main model.
+02-02 11:09:45.635 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: _stopping_metric: Stopping metric is ignored for _stopping_rounds=0.
+02-02 11:09:45.635 127.0.0.1:54321       30684     FJ-3-59  WARN water.default: _stopping_tolerance: Stopping tolerance is ignored for _stopping_rounds=0.
+02-02 11:12:04.284 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 11:12:04.285 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 11:12:04.286 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping unused columns: [registered_early_flag]
+02-02 11:12:04.924 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.933 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.933 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.934 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.934 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.934 127.0.0.1:54321       30684      FJ-3-1  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.936 127.0.0.1:54321       30684    FJ-4-123  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.937 127.0.0.1:54321       30684     FJ-4-51  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.936 127.0.0.1:54321       30684     FJ-4-39  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.937 127.0.0.1:54321       30684     FJ-4-45  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:04.937 127.0.0.1:54321       30684     FJ-4-19  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:07.430 127.0.0.1:54321       30684     FJ-4-45  WARN water.default: Reached maximum number of iterations 141!
+02-02 11:12:08.025 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'DRF_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:08.025 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'GLM_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:08.112 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 11:12:08.113 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: _train: Dropping unused columns: [registered_early_flag]
+02-02 11:12:08.113 127.0.0.1:54321       30684     FJ-1-25  WARN water.default: ModelTraining: _train param, Dropping unused columns: [registered_early_flag]
+02-02 11:12:11.558 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.582 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.584 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.584 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.585 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.585 127.0.0.1:54321       30684     FJ-3-71  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:11.586 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:13.393 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:15.040 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:16.678 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:18.286 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: lambda_search: disabled when user specified any lambda value(s).
+02-02 11:12:21.303 127.0.0.1:54321       30684     FJ-4-11  WARN water.default: Reached maximum number of iterations 136!
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_4': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_2': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'DRF_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_3': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_1_AutoML_3_20260202_104113_model_3': substituting in a column of NaN
+02-02 11:12:22.119 127.0.0.1:54321       30684     FJ-2-53  WARN water.default: Test/Validation dataset is missing column 'GLM_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_4': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_2': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'DRF_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_1_AutoML_3_20260202_104113': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'GBM_grid_1_AutoML_3_20260202_104113_model_3': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'DeepLearning_grid_1_AutoML_3_20260202_104113_model_3': substituting in a column of NaN
+02-02 11:12:24.800 127.0.0.1:54321       30684  48097-1458  WARN water.default: Test/Validation dataset is missing column 'GLM_1_AutoML_3_20260202_104113': substituting in a column of NaN
