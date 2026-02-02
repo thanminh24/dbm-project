@@ -1,0 +1,20 @@
+02-02 09:49:56.605 127.0.0.1:54321       30684        main  WARN org.apache.hadoop.util.Shell: Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:600) ~[h2o.jar:?]
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:621) ~[h2o.jar:?]
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:644) ~[h2o.jar:?]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:741) [h2o.jar:?]
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79) [h2o.jar:?]
+	at org.apache.hadoop.conf.Configuration.getStringCollection(Configuration.java:2268) [h2o.jar:?]
+	at water.persist.PersistHdfs.injectS3ASecurityCredentialProviders(PersistHdfs.java:94) [h2o.jar:?]
+	at water.persist.PersistHdfs.<clinit>(PersistHdfs.java:80) [h2o.jar:?]
+	at hex.security.KerberosExtension.onLocalNodeStarted(KerberosExtension.java:60) [h2o.jar:?]
+	at water.H2O.main(H2O.java:2446) [h2o.jar:?]
+	at water.H2OStarter.start(H2OStarter.java:22) [h2o.jar:?]
+	at water.H2OStarter.start(H2OStarter.java:51) [h2o.jar:?]
+	at water.H2OApp.main(H2OApp.java:12) [h2o.jar:?]
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:520) ~[h2o.jar:?]
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:491) ~[h2o.jar:?]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:568) ~[h2o.jar:?]
+	... 9 more
