@@ -1,89 +1,132 @@
-﻿# OULAD Early‑Warning Modeling (H2O AutoML + XGBoost)
+<div align="center">
 
-This project predicts student pass/fail outcomes using early, non‑leaking signals from the OULAD dataset. The workflow is notebook‑driven and includes detailed EDA, leakage investigation, feature selection, and modeling (Logistic Regression, Decision Tree, H2O AutoML, XGBoost + Optuna).
+# OULAD Early-Warning Modeling
 
-## Requirements
+### Predicting Student Success Through VLE Engagement
 
-- Python 3.10+ (3.11 recommended)
-- Java 17+ (required by H2O)
-- Optional: GPU + CUDA for XGBoost acceleration
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Optuna-017CEE?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io)
+[![H2O](https://img.shields.io/badge/H2O-AutoML-FFC107?style=for-the-badge&logo=h2o&logoColor=black)](https://h2o.ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## Install (All Libraries)
+**Can we predict whether a student will pass or fail based on their early VLE (Virtual Learning Environment) behavior?**
+
+This project uses the [OULAD dataset](https://analyse.kmi.open.ac.uk/open_dataset) to build an end-to-end ML pipeline that answers this question — from raw data through 8 question-driven EDA checks to a 4-model comparison.
+
+[Getting Started](#-getting-started) · [Pipeline](#-pipeline-overview) · [Models](#-models) · [Results](#-results) · [References](#-references)
+
+</div>
+
+---
+
+## Highlights
+
+- **8 Question-Driven EDA Checks** — distribution separation, dose-response curves, activity composition, timing analysis, confounder context, and more
+- **4 Models Compared Fairly** — Logistic Regression, Decision Tree, H2O AutoML, XGBoost + Optuna on the same 80/10/10 split
+- **Leakage-Safe Features** — only early, non-leaking signals used for prediction
+- **Single Notebook Pipeline** — reproducible end-to-end workflow in one file
+
+## Getting Started
+
+### Prerequisites
+
+| Requirement | Version | Note |
+|-------------|---------|------|
+| Python | 3.10+ (3.11 recommended) | Core runtime |
+| Java | 17+ | Required by H2O (auto-falls back if missing) |
+| GPU + CUDA | Optional | XGBoost acceleration |
+
+### Installation
 
 ```bash
+# Core dependencies
 pip install numpy pandas matplotlib scikit-learn h2o xgboost optuna
+
+# Optional: notebook tooling
+pip install nbclient nbformat ipykernel ipywidgets
 ```
 
-Optional (notebook tooling):
+### Data Setup
 
-```bash
-pip install nbclient nbformat ipykernel
-```
-
-## Folder Structure
-
-```
-D:\Project\DBM_FINAL\
-├── data\                 # OULAD CSV files
-├── h2o_logs\             # H2O runtime logs
-├── results\              # Model logs and artifacts
-├── Prj_DBM_Final.ipynb   # Full pipeline (EDA -> Modeling -> Evaluation)
-├── README.md
-└── LICENSE
-```
-
-## Create and Populate the Data Folder
-
-1) Create the folder:
+Download the [OULAD dataset](https://analyse.kmi.open.ac.uk/open_dataset) and place the 7 CSV files in a `data/` folder:
 
 ```bash
 mkdir data
+# Place these files inside data/
+# assessments.csv | courses.csv | studentAssessment.csv | studentInfo.csv
+# studentRegistration.csv | studentVle.csv (~433 MB) | vle.csv
 ```
 
-2) Place the 7 OULAD CSV files in `data/`:
+### Run
 
-- assessments.csv
-- courses.csv
-- studentAssessment.csv
-- studentInfo.csv
-- studentRegistration.csv
-- studentVle.csv
-- vle.csv
+```bash
+jupyter notebook Prj_DBM_Final.executed_EDA.ipynb
+```
 
-## Run (Single Notebook Workflow)
+Run all cells top-to-bottom. That's it.
 
-Open and run **`Prj_DBM_Final.ipynb`** end‑to‑end. It includes:
+## Pipeline Overview
 
-- Data loading and cleaning
-- Full EDA (visualizations + leakage investigation)
-- Feature selection (hardcoded 40‑feature list)
-- Modeling (Logistic Regression, Decision Tree, H2O AutoML, XGBoost + Optuna)
-- Evaluation and interpretation
+```
+ Data Loading ──▶ Feature Engineering ──▶ EDA ──▶ Modeling ──▶ Evaluation
+```
 
-## Runtime Configuration (Final Notebook)
+## Models
 
-In the setup cell of `Prj_DBM_Final.ipynb`:
+| Model | Type | Purpose |
+|-------|------|---------|
+| **Logistic Regression** | Linear | Interpretability baseline |
+| **Decision Tree** (depth=6) | Rule-based | Non-linear baseline |
+| **H2O AutoML** | Ensemble search | Best-of-family comparison (GLM, GBM, DRF, Stacked) |
+| **XGBoost + Optuna** | Tuned boosting | Peak tabular performance with Bayesian HP search |
 
-- `TEST_MODE = True` → quick validation (AutoML=1 model, XGB=1 trial)
-- `TEST_MODE = False` → full run (AutoML=20 models, XGB=10 trials)
+### Runtime Configuration
 
-You can also adjust:
-- `AUTOML_MAX_MODELS`
-- `AUTOML_MAX_RUNTIME_SECS`
-- `XGB_TRIALS`
+Control training intensity via `TEST_MODE` in the setup cell:
 
-## Outputs
+| Variable | `TEST_MODE = True` | `TEST_MODE = False` |
+|---|---|---|
+| `AUTOML_MAX_MODELS` | 1 model | 20 models |
+| `XGB_TRIALS` | 1 trial | 10 trials |
 
-- `results/` contains model logs and artifacts
-- AutoML leaderboard + metrics are printed in the notebook
-- XGBoost best parameters and metrics are printed after Optuna search
+`AUTOML_MAX_RUNTIME_SECS` can be adjusted independently.
+
+## Results
+
+| Output | Location |
+|--------|----------|
+| Best XGBoost model | `results/xgboost_best_model.json` |
+| AutoML leaderboard | Printed in notebook |
+| Performance metrics (AUC, F1, Accuracy) | Printed in notebook |
+| Project report | `docs/Report dbm.pdf` |
+
+## Project Structure
+
+```
+dbm-project/
+├── data/                                  # OULAD CSV files (gitignored)
+├── h2o_logs/                              # H2O runtime logs
+├── results/
+│   └── xgboost_best_model.json            # Best XGBoost model from Optuna
+├── Prj_DBM_Final.executed_EDA.ipynb       # Full pipeline notebook
+└── README.md
+```
 
 ## References
 
-```
-https://developers.google.com/machine-learning/crash-course/logistic-regression/sigmoid-function
-https://scikit-learn.org/stable/modules/tree.html
-https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html
-https://arxiv.org/pdf/1603.02754
-https://docs.h2o.ai/h2o/latest-stable/h2o-r/docs/reference/h2o.automl.html
-```
+| Topic | Source |
+|-------|--------|
+| Logistic Regression | [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/logistic-regression/sigmoid-function) |
+| Decision Trees | [scikit-learn docs](https://scikit-learn.org/stable/modules/tree.html) |
+| Log Loss | [scikit-learn docs](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html) |
+| XGBoost | [Chen & Guestrin, 2016](https://arxiv.org/pdf/1603.02754) |
+| H2O AutoML | [H2O docs](https://docs.h2o.ai/h2o/latest-stable/h2o-r/docs/reference/h2o.automl.html) |
+
+---
+
+<div align="center">
+
+**MIT License** · Made for DBM302m
+
+</div>
